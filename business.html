@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website creation, redesigns, updates, and consultations for small businesses.">
+  <meta name="theme-color" content="#0b1530">
+  <title>Business Website Services | Learn &amp; Build with Ryan</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .google-form-container {
+      width: 100%;
+      min-width: 0;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .google-form-container iframe {
+      display: block;
+      width: 100%;
+      min-height: 1492px;
+      border: 0;
+      background: #fff;
+    }
+
+    /* Navy and blue appointment section */
+    .appointments-section {
+      margin-top: 64px;
+      padding: 42px 26px;
+      border-radius: 20px;
+      text-align: center;
+      color: #f8fafc;
+      background: linear-gradient(135deg, #0b1530 0%, #101f46 100%);
+      border: 1px solid rgba(96, 165, 250, 0.35);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+    }
+
+    .appointments-section .section-tag {
+      color: #60a5fa;
+    }
+
+    .appointments-section .section-title {
+      color: #ffffff;
+      margin-top: 12px;
+    }
+
+    .appointments-section .appointment-description {
+      max-width: 650px;
+      margin: 0 auto 24px;
+      color: #cbd5e1;
+      line-height: 1.8;
+    }
+
+    .appointment-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 26px 0;
+    }
+
+    .appointments-section .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      border: 1px solid #3b82f6;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .appointments-section .btn:hover {
+      background: #1d4ed8;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .appointments-section .btn.secondary {
+      background: transparent;
+      border-color: #64748b;
+      color: #e2e8f0;
+    }
+
+    .appointments-section .btn.secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .appointment-note {
+      color: #aebed4;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-top: 16px;
+    }
+
+    .appointment-note a {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
+
+    .appointment-calendar {
+      width: 100%;
+      height: 750px;
+      margin-top: 28px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: 12px;
+      background: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      .appointments-section {
+        padding: 30px 16px;
+      }
+
+      .appointment-actions {
+        flex-direction: column;
+      }
+
+      .appointment-actions .btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .appointment-calendar {
+        height: 600px;
+      }
+
+      .google-form-container iframe {
+        min-height: 1600px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="particle-field" aria-hidden="true"></div>
+
+  <header>
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo-container">
+        <img src="images/ryan-logo.png" alt="" class="logo-img">
+        <span class="logo-text">Learn &amp; Build with Ryan</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Tutoring</a></li>
+        <li><a href="business.html" class="active">For Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="booking.html">Book a Lesson</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+
+    <!-- HERO -->
+    <section class="hero-content">
+      <div class="eyebrow">For small businesses</div>
+
+      <h1>Bring your business online with a website that works for you.</h1>
+
+      <p>
+        Need a website for your business, an update to an existing site,
+        or a fresh design? Let's discuss your goals and find a practical
+        solution that fits your needs.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#inquiry" class="btn">Discuss Your Project</a>
+        <a href="#services" class="btn secondary">Explore Services</a>
+        <a href="#appointments" class="btn secondary">Book a Consultation</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="container reveal">
+      <div class="section-header">
+        <div class="section-tag">What I can help with</div>
+        <h2 class="section-title">Website services for your business.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-item">
+          <h3>New Business Websites</h3>
+          <p>
+            Create a clear online home for your business with useful
+            information about your services and ways to contact you.
+          </p>
+          <ul class="service-list">
+            <li>Business information and service pages</li>
+            <li>Contact details and inquiry links</li>
+            <li>Mobile-friendly layouts</li>
+          </ul>
+        </article>
+
+        <article class="service-item">
+          <h3>Website Redesigns</h3>
+          <p>
+            Refresh an existing website's appearance and make its
+            information easier for visitors to navigate.
+          </p>
+          <ul class="service-list">
+            <li>Layout and visual improvements</li>
+            <li>Clearer navigation</li>
+            <li>Responsive design improvements</li>
+          </ul>
+        </article>
+
+        <article class="service-item">
+          <h3>Website Updates</h3>
+          <p>
+            Make agreed changes to an existing website as your business
+            and its information evolve.
+          </p>
+          <ul class="service-list">
+            <li>Text and image changes</li>
+            <li>Service and information updates</li>
+            <li>Small layout adjustments</li>
+          </ul>
+        </article>
+
+        <article class="service-item">
+          <h3>Let's Discuss Your Idea</h3>
+          <p>
+            Have a specific website idea? Tell me what you're hoping to
+            achieve, and we can discuss the scope and next steps.
+          </p>
+          <ul class="service-list">
+            <li>Initial project discussion</li>
+            <li>Requirements and goals</li>
+            <li>Project-specific quote</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUSINESS INQUIRY FORM -->
+    <section id="inquiry" class="container reveal">
+      <div class="contact-grid">
+        <div class="contact-box">
+          <div class="section-tag">Start a conversation</div>
+
+          <h2 class="section-title">Tell me about your project.</h2>
+
+          <p>
+            Share a few details about your business, what you need, and
+            what you'd like your website to accomplish.
+          </p>
+
+          <p>
+            I'll review your inquiry and follow up to discuss the details.
+          </p>
+        </div>
+
+        <div class="contact-form google-form-container">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeBYf6bjNIwd4nwk9gYL26ua2KBSJjbQeaKBGncpifrMAn0YQ/viewform?embedded=true"
+            title="Business Project Inquiry Form" width="100%" height="1492" loading="lazy">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    ```html
+    <!-- APPOINTMENTS -->
+    <section id="appointments" class="appointments-section reveal">
+      <div class="section-tag">LET'S TALK ABOUT YOUR PROJECT</div>
+
+      <h2 class="section-title">Request a Website Consultation</h2>
+
+      <p class="appointment-description">
+        Have an idea for a new website or want to improve your existing one?
+        Tell me about your business, your goals, and the features you need.
+        I'll review your inquiry and contact you to arrange a suitable time
+        to discuss your project.
+      </p>
+
+      <div class="appointment-actions">
+        <a class="btn" href="#inquiry">
+          Request a Free Consultation
+        </a>
+
+        <a href="#inquiry" class="btn secondary">
+          Send a Project Inquiry
+        </a>
+      </div>
+
+      <p class="appointment-note">
+        Your initial consultation request is free. Project requirements,
+        pricing, and next steps will be discussed before any work begins.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Learn &amp; Build with Ryan</p>
+      <a href="index.html">Back to Home</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

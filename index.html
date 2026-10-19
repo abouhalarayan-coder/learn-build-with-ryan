@@ -1,49 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ryan's Tutoring - Home</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn coding with Ryan or get help building a website for your business. Friendly tutoring and practical web development services.">
+  <meta name="theme-color" content="#162F50">
+  <title>Learn & Build with Ryan | Coding & Web Services</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo-container">
-      <img src="images/ryan-logo.png" alt="ryan-logo" class="logo-img">
-      <h1 class="logo-text">Ryan's Tutoring</h1>
+  <div class="particle-field" aria-hidden="true"></div>
+
+  <header>
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo-container" aria-label="Learn and Build with Ryan home">
+        <img src="images/ryan-logo.png" alt="" class="logo-img">
+        <span class="logo-text">Learn & Build with Ryan</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Tutoring</a></li>
+        <li><a href="business.html" class="active">For Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="booking.html">Book a Lesson</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow">Learn something. Build something.</div>
+
+        <h1 id="hero-title">
+          Learn new skills.
+          <span>Build something great.</span>
+        </h1>
+
+        <p>
+          Welcome to Learn & Build with Ryan. I help students learn coding
+          step by step and help businesses create a professional online
+          presence through practical web development services.
+        </p>
+
+        <div class="hero-actions">
+          <a href="services.html" class="btn">Explore Coding Tutoring</a>
+          <a href="business.html" class="btn secondary">Website Services</a>
+        </div>
+
+        <ul class="mini-stats">
+          <li>
+            <strong>Learn</strong>
+            <span>Beginner-friendly coding lessons</span>
+          </li>
+          <li>
+            <strong>Build</strong>
+            <span>Practical website projects</span>
+          </li>
+          <li>
+            <strong>Grow</strong>
+            <span>Skills and digital confidence</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-label="Coding and learning">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="floating-card card-top">Learn at your own pace</div>
+        <div class="floating-card card-bottom">Turn ideas into websites</div>
+        <img src="images/hero.png" alt="Coding and web development learning">
+      </div>
+    </section>
+
+    <section class="container reveal audience-section" aria-labelledby="audience-title">
+      <div class="section-header">
+        <div class="section-tag">Choose your path</div>
+        <h2 class="section-title" id="audience-title">
+          What can I help you with?
+        </h2>
+        <p>Whether you want to learn a new skill or build your online presence, start here.</p>
+      </div>
+
+      <div class="feature-grid audience-grid">
+        <article class="feature-card audience-card">
+          <div class="icon" aria-hidden="true">🎓</div>
+          <h3>I'm a Student</h3>
+          <p>
+            Learn HTML, CSS, JavaScript, and database fundamentals with
+            personalized, beginner-friendly tutoring.
+          </p>
+          <ul class="service-list">
+            <li>One-on-one online lessons</li>
+            <li>Step-by-step explanations</li>
+            <li>Practice and project guidance</li>
+            <li>Flexible lesson booking</li>
+          </ul>
+          <a href="services.html" class="btn">Explore Tutoring</a>
+        </article>
+
+        <article class="feature-card audience-card">
+          <div class="icon" aria-hidden="true">💼</div>
+          <h3>I'm a Business Owner</h3>
+          <p>
+            Give your business a professional online presence with website
+            creation, redesigns, and practical website updates.
+          </p>
+          <ul class="service-list">
+            <li>New business websites</li>
+            <li>Website redesigns</li>
+            <li>Content and layout updates</li>
+            <li>Project inquiries and quotes</li>
+          </ul>
+          <a href="business.html" class="btn">Explore Business Services</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container reveal">
+      <div class="info-panel">
+        <div class="section-header">
+          <div class="section-tag">The approach</div>
+          <h2 class="section-title">Personal guidance. Practical results.</h2>
+        </div>
+
+        <div class="dual-layout">
+          <div class="text-block">
+            <p>
+              Technology can feel overwhelming when you don't know where to
+              begin. My goal is to make the process easier through clear
+              communication, practical work, and a focus on your needs.
+            </p>
+            <ul>
+              <li>Friendly and straightforward communication</li>
+              <li>Solutions tailored to each project or learner</li>
+              <li>Practical skills and real-world website work</li>
+            </ul>
+          </div>
+
+          <div class="mini-visual">
+            <div class="badge">HTML · CSS · JavaScript · SQL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="hero-actions">
+      <a href="about.html" class="btn secondary">Get to Know Me</a>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="review.html">Review</a></li>
-      <li><a href="booking.html">Book</a></li>
-    </ul>
-  </nav>
-</header>
+    </div>
+    </div>
+    </section>
 
-<div class="hero">
-  <div class="hero-content">
-    <h2>Private Online Coding Lessons – Beginners Welcome</h2>
-    <p>Step-by-step tutoring in HTML, CSS, JavaScript, Databases & more.</p>
-    <a href="booking.html" class="btn">Book Your First Lesson</a>
-  </div>
-  <div class="image-container">
-    <img src="images/hero.png" alt="Friendly coding tutor at a laptop">
-  </div>
-</div>
+    <section class="container reveal" aria-labelledby="contact-title">
+      <div class="contact-grid">
+        <div class="contact-box">
+          <div class="section-tag">Get in touch</div>
+          <h2 class="section-title" id="contact-title">
+            Have a question or an idea?
+          </h2>
+          <p>
+            Tell me what you'd like to learn or what kind of website your
+            business needs. I'll review your message and get back to you.
+          </p>
+          <ul class="check-list">
+            <li>Coding tutoring inquiries</li>
+            <li>Business website projects</li>
+            <li>Questions about available services</li>
+          </ul>
+        </div>
 
-<main class="section">
-  <h2>Welcome!</h2>
-  <p>Learn coding in a way that’s simple, fun, and practical. Navigate to About or Services to learn more, or Book a lesson directly.</p>
-</main>
 
-<footer>
-  <p>© 2026 Ryan's Coding Tutoring | All Rights Reserved</p>
-</footer>
+        <form class="contact-form">
+          <h3>Contact Ryan</h3>
 
-<script src="script.js"></script>
+          <p>
+            Interested in coding tutoring or a website for your business?
+            Submit your inquiry using the form below.
+          </p>
+
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeBYf6bjNIwd4nwk9gYL26ua2KBSJjbQeaKBGncpifrMAn0YQ/viewform?embedded=true"
+            width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0"
+            title="Contact Ryan - Inquiry Form">
+            Loading form…
+          </iframe>
+
+          <p>
+            If the form does not appear,
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBYf6bjNIwd4nwk9gYL26ua2KBSJjbQeaKBGncpifrMAn0YQ/viewform?usp=publish-editor"
+              target="_blank" rel="noopener noreferrer">
+              open the Google Form here
+            </a>.
+          </p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Learn & Build with Ryan</p>
+      <a href="booking.html">Book a Coding Lesson</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
