@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #dfeeff; /* page background light blue */
+  --bg: #dfeeff;
+  /* page background light blue */
   --bg-deep: #cfe0ff;
-  --header: #162F50; /* header/nav: dark navy */
-  --card: #1a3a5c; /* primary dark navy for all panels/cards - consistent with About page */
-  --card-strong: #0f2640; /* darker navy for accents */
-  --card-light: #2a5a8c; /* lighter navy for secondary elements */
-  --primary: #52B788; /* growth green - educational & trustworthy */
+  --header: #162F50;
+  /* header/nav: dark navy */
+  --card: #1a3a5c;
+  /* primary dark navy for all panels/cards - consistent with About page */
+  --card-strong: #0f2640;
+  /* darker navy for accents */
+  --card-light: #2a5a8c;
+  /* lighter navy for secondary elements */
+  --primary: #52B788;
+  /* growth green - educational & trustworthy */
   --primary-hover: #40916C;
-  --text: #ffffff; /* main text on dark panels */
-  --muted: #ffffff; /* secondary text - also white for readability */
+  --text: #ffffff;
+  /* main text on dark panels */
+  --muted: #ffffff;
+  /* secondary text - also white for readability */
   --border: rgba(255, 255, 255, 0.12);
   --success: #52B788;
   --warning: #f0c36a;
@@ -44,25 +52,44 @@ body::before {
   content: "";
   position: fixed;
   inset: -30%;
-  background: linear-gradient(120deg, rgba(59,130,246,0.08), rgba(37,99,235,0.04), rgba(255,255,255,0.02));
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.08), rgba(37, 99, 235, 0.04), rgba(255, 255, 255, 0.02));
   filter: blur(80px);
   pointer-events: none;
   animation: drift 20s ease-in-out infinite alternate;
 }
 
 @keyframes drift {
-  0% { transform: rotate(0deg) scale(1); }
-  100% { transform: rotate(8deg) scale(1.08); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(8deg) scale(1.08);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-14px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.25); }
-  50% { box-shadow: 0 0 25px 8px rgba(124, 58, 237, 0.18); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 0 25px 8px rgba(124, 58, 237, 0.18);
+  }
 }
 
 @keyframes revealUp {
@@ -70,6 +97,7 @@ body::before {
     opacity: 0;
     transform: translateY(28px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -116,16 +144,17 @@ header {
 }
 
 .logo-img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 10px 22px rgba(38, 78, 199, 0.08);
-  background: rgba(255, 255, 255, 0.08);
+  width: 190px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
 }
 
 .logo-text {
+  display: none;
   margin: 0;
   font-size: clamp(1.1rem, 1.2vw, 1.75rem);
   font-weight: 800;
@@ -741,17 +770,25 @@ section.container.reveal {
   z-index: 0;
   opacity: 0.32;
   background-image:
-    radial-gradient(circle at 10% 20%, rgba(255,255,255,0.28) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.28) 0 1px, transparent 1.5px),
     radial-gradient(circle at 30% 70%, rgba(131, 178, 255, 0.2) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 75% 40%, rgba(255,255,255,0.2) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 60% 80%, rgba(255,255,255,0.18) 0 1px, transparent 1.8px);
+    radial-gradient(circle at 75% 40%, rgba(255, 255, 255, 0.2) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0.18) 0 1px, transparent 1.8px);
   animation: particleDrift 22s linear infinite;
 }
 
 @keyframes particleDrift {
-  0% { transform: translateY(0) translateX(0); }
-  50% { transform: translateY(14px) translateX(-10px); }
-  100% { transform: translateY(0) translateX(0); }
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(14px) translateX(-10px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
 }
 
 .pricing-grid {
@@ -946,7 +983,7 @@ footer p,
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(248,250,252,0.85) !important;
+  color: rgba(248, 250, 252, 0.85) !important;
 }
 
 .trust-strip {
@@ -980,6 +1017,7 @@ textarea::placeholder {
 }
 
 @media (max-width: 900px) {
+
   .hero,
   .about-container,
   .dual-layout,
